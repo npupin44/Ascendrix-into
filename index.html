@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascendrix Intro</title>
+    <style>
+        /* Osnovni stilovi za tamnu temu */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Crna pozadina da se stopi sa videom */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Puna visina ekrana */
+            overflow: hidden; /* Bez skrolovanja */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Kontejner za video */
+        .video-container {
+            width: 100%;
+            max-width: 500px; /* Ograničavamo širinu da na kompjuteru ne bude preveliko */
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 195, 255, 0.3); /* Mali plavi sjaj oko videa */
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Opciono: Tekst ispod videa */
+        .loading-text {
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            opacity: 0.7;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <!-- 
+           autoplay: kreće sam
+           muted: mora biti ugašen zvuk da bi autoplay radio na telefonu
+           loop: vrti se u krug
+           playsinline: da na iPhone-u ne iskače preko celog ekrana
+        -->
+        <video autoplay muted loop playsinline>
+            <source src="ascendrix-intro.mp4" type="video/mp4">
+            Tvoj pretraživač ne podržava video tag.
+        </video>
+    </div>
+
+</body>
+</html>
+
+
